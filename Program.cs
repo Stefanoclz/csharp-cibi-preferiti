@@ -8,6 +8,12 @@ Console.WriteLine("La lista dei cibi contiene " + cibiPreferiti.Length + " eleme
 
 string answer = Console.ReadLine();
 
+while (!Array.Exists(cibiPreferiti, element => element == answer)){
+    Console.WriteLine("riprova");
+    answer = Console.ReadLine();
+}
+
+
 int random = new Random().Next(0, 6);
 
 
