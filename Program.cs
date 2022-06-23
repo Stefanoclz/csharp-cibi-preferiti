@@ -16,3 +16,12 @@ Console.WriteLine("Il mio cibo preferito è: " + cibiPreferiti[0]);
 
 int last = cibiPreferiti.Length - 1;
 Console.WriteLine("L'ultimo dei miei cibi preferiti è: " + cibiPreferiti[last]);
+
+
+if(cibiPreferiti.Length % 2 == 0)
+{
+    Console.WriteLine("I cibi al centro sono: " + cibiPreferiti[cibiPreferiti.Length/2] + " e " + cibiPreferiti[(cibiPreferiti.Length / 2) + 1]);
+} else
+{
+    Console.WriteLine("Il cibo al centro è: " + cibiPreferiti[cibiPreferiti.Length / 2]);
+}
